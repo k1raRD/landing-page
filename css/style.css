@@ -44,19 +44,26 @@ body
   align-items: center;
 }
 
+.header a
+{
+  position: relative;
+  top: 15px;
+  left: 7px;
+}
+
 .header .header-nav
 {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  margin-right: 12%;
+  margin-right: 15%;
 }
 
 #logo
 {
   font-size: var(--header-logo-size);
   font-weight: 700;
-  margin-right: 40%;
+  margin-right: 25%;
 }
 
 a
@@ -64,17 +71,32 @@ a
   text-decoration: none;
   color: #fff;
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 400;
+}
+
+.header .header-nav a:hover
+{
+  color: #3883f6;
 }
 
 button
 {
   background-color: var(--button-color);  
+  border-radius: 1rem;
+  font-size: 0.5rem;
+  width: 130px;
+  height: 35px;
+  border-color: var(--button-color);
+}
+
+button:hover
+{
+  background-color: var(--dark-background);  
 }
 
 main
 {
-  width:100vw;
+  width: 100vw;
   height: 1000px;
 }
 
@@ -85,53 +107,196 @@ h1
   color: var(--main-text-color)
 }
 
-img
+figure
 {
-  width: 200px;
-  height: 150px;
+  width: 450px;
+  height: 220px;
+  background-color: gray;
 }
 
 .section1
 {
   background-color: var(--dark-background);
-  height: 300px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 }
 
 .section1 .container-section1
 {
   display: flex;
   justify-content: space-between;
-  gap: 80px;
+  gap: 90px;
+  position: absolute;
+  left: 235px;
 }
 
 .section1 .container-section1 .text-button
 {
   width: 350px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.section1 .container-section1 p
+{
+  font-size: 1.8rem;
+  color: var(--secondary-text-color);
+  font-weight: 300;
 }
 
 .section2
 {
-  background-color: var(--dark-background);
-  height: 200px;
+  background-color: var(--main-text-color);
+  height:420px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
 }
+
+.section2 h2
+{
+  font-size: 3.6rem;
+  font-weight: 900;
+  color: var(--dark-background);
+  position: relative;
+  bottom: 40px;
+}
+
+
+.container-divs
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  bottom: 40px;
+}
+
+.container-divs div
+{
+  width: 150px;
+  height: 150px;
+  border: 2px solid var(--button-color);
+  border-radius: 15px;
+}
+
+.container-divs div p
+{
+  position: relative;
+  top: 160px;
+  text-align: center;
+  font-size: 1rem;
+  color: gray;
+}
+
 
 .section3
 {
-  background-color: var(--dark-background);
-  height: 200px;
+  background-color: var(--secondary-text-color);
+  height: 400px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.section3 div
+{
+  width: 50vw;
+}
+
+.section3 p
+{
+  font-size: 3.6rem;
+  font-weight: 200;
+  text-align: left;
+  color: var(--dark-background);
+  position: relative;
+  left: 30px;
+}
+
+.section3 b p
+{
+  color: var(--dark-background);
+  font-weight: 700;
+  font-size: 2rem;
+  position: relative;
+  left: 250px;
+  top: 5px;
+}
+
 
 .section4
 {
-  background-color: var(--dark-background);
-  height: 200px;
+  background-color: var(--main-text-color);
+  height: 300px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.section4 .container
+{
+  height: 150px;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  background-color: var(--button-color);
+  border-radius: 10px;
+
+}
+
+.section4 div .text-1
+{
+  color: var(--main-text-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.section4 div .text-2
+{
+  color: var(--main-text-color);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.section4 div button
+{
+  border-color: var(--main-text-color);
+}
+
+.section4 div button:hover
+{
+  border-color: var(--dark-background);
+  background-color: var(--button-color);
+}
+
 
 footer
 {
   background-color: var(--dark-background);
-  height: 200px;
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p
+{
+  font-size: 1.8rem;
+  color: var(--main-text-color)
 }
