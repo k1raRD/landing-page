@@ -1,311 +1,203 @@
-
-
-*
-{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-:root
-{
-  --dark-background: #1f2937;
-  --main-text-size: 4.8rem;
-  --main-text-color: #f9faf8;
-  --secondary-text-size: 1.8rem;
-  --secondary-text-color: #e5e7eb;
-  --header-logo-size: 2rem;
-  --button-color: #3883f6;
-  --information-size: 3.6rem;
+:root {
+    --dark-background-color: #1f2937;
+    --white-text-color: #F9FAF8;
+    --light-white-text-color: #E5E7EB;
+    --blue-button-color: #3882F6;
+    --gray-color: #E5E7EB;
+}
+  
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
 }
 
-html
-{
-  font-size: 62.5%;
+ul{
+    list-style: none;
 }
 
-body
-{
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+a{
+    text-decoration: none;
 }
 
-.header
-{
-  background-color: var(--dark-background);
-  height: 30px;
-  width: 100vw;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+section, .header{
+    padding: 0 20%;
 }
 
-.header a
-{
-  position: relative;
-  top: 15px;
-  left: 7px;
+.hero{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    background-color: var(--dark-background-color);
 }
 
-.header .header-nav
-{
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  margin-right: 15%;
+.header{
+    padding-top: 2%;
 }
 
-#logo
-{
-  font-size: var(--header-logo-size);
-  font-weight: 700;
-  margin-right: 25%;
+.header_nav{
+    display: flex;
+    justify-content: space-between;
 }
 
-a
-{
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.8rem;
-  font-weight: 400;
+.header_nav--logo{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white-text-color);
 }
 
-.header .header-nav a:hover
-{
-  color: #3883f6;
+.header_nav_ul{
+    display: flex;
+    gap: 18px;
+    color: var(--light-white-text-color);
+    font-size: 16px;
 }
 
-button
-{
-  background-color: var(--button-color);  
-  border-radius: 1rem;
-  font-size: 0.5rem;
-  width: 130px;
-  height: 35px;
-  border-color: var(--button-color);
+.section_main{
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
 }
 
-button:hover
-{
-  background-color: var(--dark-background);  
+.section_main_image, .section_main_content{
+    width: 500px;
 }
 
-main
-{
-  width: 100vw;
-  height: 1000px;
+.section_main_content h1{
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--white-text-color);
 }
 
-h1
-{
-  font-size: var(--main-text-size);
-  font-weight: 900;
-  color: var(--main-text-color)
+.section_main_content p{
+    font-size: 18px;
+    color: var(--light-white-text-color);
+    padding: 8px 0px;
 }
 
-figure
-{
-  width: 450px;
-  height: 220px;
-  background-color: gray;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.section_main_content button{
+    background-color: var(--blue-button-color);
+    color: var(--white-text-color);
+    text-align: center;
+    border-radius: 10px;
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
-figure span
-{
-  color: var(--main-text-color);
-  font-size: 2rem;
-}
-
-.section1
-{
-  background-color: var(--dark-background);
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-}
-
-.section1 .container-section1
-{
-  display: flex;
-  justify-content: space-between;
-  gap: 90px;
-  position: absolute;
-  left: 235px;
-}
-
-.section1 .container-section1 .text-button
-{
-  width: 350px;
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.section1 .container-section1 p
-{
-  font-size: 1.8rem;
-  color: var(--secondary-text-color);
-  font-weight: 300;
-}
-
-.section2
-{
-  background-color: var(--main-text-color);
-  height:420px;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 50px;
-}
-
-.section2 h2
-{
-  font-size: 3.6rem;
-  font-weight: 900;
-  color: var(--dark-background);
-  position: relative;
-  bottom: 40px;
+.section_main_image{
+    height: 220px;
+    width: 500px;
+    background-color: gray;
+    text-align: center;
+    padding-top: 110px;
+    color: var(--white-text-color);
 }
 
 
-.container-divs
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  position: relative;
-  bottom: 40px;
+.section_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 80px;
 }
 
-.container-divs div
-{
-  width: 150px;
-  height: 150px;
-  border: 2px solid var(--button-color);
-  border-radius: 15px;
+.section_info h2{
+    font-size: 36px;
+    color: var(--dark-background-color);
+    padding-bottom: 40px;
 }
 
-.container-divs div p
-{
-  position: relative;
-  top: 160px;
-  text-align: center;
-  font-size: 1rem;
-  color: gray;
+.section_info ul{
+    display: flex;
+    gap: 24px;
+    text-align: center;
 }
 
-
-.section3
-{
-  background-color: var(--secondary-text-color);
-  height: 400px;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.section_info div{
+    height: 200px;
+    border: 2px solid var(--blue-button-color);
+    border-radius: 25px;
+    margin-bottom: 16px;
 }
 
-.section3 div
-{
-  width: 50vw;
+.section_info ul li {
+    max-width: 200px;
 }
 
-.section3 p
-{
-  font-size: 3.6rem;
-  font-weight: 200;
-  text-align: left;
-  color: var(--dark-background);
-  position: relative;
-  left: 30px;
+.section_inspiringQuote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-color);
+    padding:  90px 0 64px 0 ;
 }
 
-.section3 b p
-{
-  color: var(--dark-background);
-  font-weight: 700;
-  font-size: 2rem;
-  position: relative;
-  left: 250px;
-  top: 5px;
+.section_inspiringQuote p{
+    display: flex;
+    font-size: 28px;
+    justify-content: flex-end;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--dark-background-color);
+    width: 700px;
+    padding-bottom: 24px;
 }
 
-
-.section4
-{
-  background-color: var(--main-text-color);
-  height: 300px;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#author_quote{
+    font-weight: 700;
+    color: var(--dark-background-color);
 }
 
-.section4 .container
-{
-  height: 150px;
-  width: 60vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  background-color: var(--button-color);
-  border-radius: 10px;
-
+.section_callAction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
 }
 
-.section4 div .text-1
-{
-  color: var(--main-text-color);
-  font-size: 2.5rem;
-  font-weight: 700;
+.section_callAction_container{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--blue-button-color);
+    max-width: 800px;
+    height: 100px;
+    align-items: center;
+    padding: 0 50px;
+    gap: 50px;
+    color: var(--white-text-color);
+    border-radius: 10px;
 }
 
-.section4 div .text-2
-{
-  color: var(--main-text-color);
-  font-size: 1rem;
-  font-weight: 300;
+.section_callAction_container button{
+    background-color: var(--blue-button-color);
+    color: var(--white-text-color);
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid var(--white-text-color);
+    padding: 8px 22px;
+    font-size: 10px;
+    font-weight: 700;
 }
 
-.section4 div button
-{
-  border-color: var(--main-text-color);
-}
-
-.section4 div button:hover
-{
-  border-color: var(--dark-background);
-  background-color: var(--button-color);
-}
-
-
-footer
-{
-  background-color: var(--dark-background);
-  height: 80px;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-footer p
-{
-  font-size: 1.8rem;
-  color: var(--main-text-color)
+footer{
+    background-color: var(--dark-background-color);
+    padding: 40px;
+    color: var(--white-text-color);
+    text-align: center;
 }
